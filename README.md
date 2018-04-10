@@ -7,7 +7,7 @@
   4. When a session is detected, write `ip`, `start`, `end`, `duration` and `count` to `sessionization.txt` 
 
 #### To run: 
-1. Ensure Java 8 JDK (also known as 1.8) is installed by running `javac -version` in the command line is `javac 1.8.___`. If not, install the [JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) 
+1. Ensure Java 8 JDK (also known as 1.8) is installed by running `javac -version` in the command line: `javac 1.8.___`. If not, install the [JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) 
 
 2. Make sure sbt is installed 
 [Mac](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Mac.html) 
