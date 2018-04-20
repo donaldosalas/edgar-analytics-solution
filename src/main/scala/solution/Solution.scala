@@ -6,8 +6,6 @@ import org.joda.time.{DateTime, Duration, PeriodType}
 import org.joda.time.format.{DateTimeFormat, PeriodFormat}
 import scala.io.Source
 
-
-
 object Solution extends App {
   /*
     1. Add current request's ip address to correspoinding Map(request time -> Seq(IpAddress)): ip address start times
@@ -198,9 +196,4 @@ object Solution extends App {
 
   //Close left-over sessions
   closeInactiveSessions(None, StatefulData(finalIpRequestCountByIp, finalRequestDateTimesByIp))
-
-  val endDateTime = DateTime.now()
-  val duration = new Duration(startDateTime, endDateTime)
-  val period = duration.toPeriod().normalizedStandard(PeriodType.time())
-  println(s"Time to process: ${PeriodFormat.getDefault().print(period)}")
 }
