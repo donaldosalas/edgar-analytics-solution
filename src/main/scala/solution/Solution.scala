@@ -196,9 +196,4 @@ object Solution extends App {
 
   //Close left-over sessions
   closeInactiveSessions(None, StatefulData(finalIpRequestCountByIp, finalRequestDateTimesByIp))
-
-  val endDateTime = DateTime.now()
-  val duration = new Duration(startDateTime, endDateTime)
-  val period = duration.toPeriod().normalizedStandard(PeriodType.time())
-  println(s"Time to process: ${PeriodFormat.getDefault().print(period)}")
 }
