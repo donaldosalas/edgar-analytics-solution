@@ -6,8 +6,6 @@ import org.joda.time.{DateTime, Duration, PeriodType}
 import org.joda.time.format.{DateTimeFormat, PeriodFormat}
 import scala.io.Source
 
-
-
 object Solution extends App {
   /*
     1. Add current request's ip address to correspoinding Map(request time -> Seq(IpAddress)): ip address start times
