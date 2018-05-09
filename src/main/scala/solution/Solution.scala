@@ -168,7 +168,7 @@ object Solution extends App {
 
     // TODO: Optimize
     val updatedRequestDateTimesByIp: Vector[(String, Set[DateTime])] = {
-      val existingRequestDateTimes = requestDateTimesByIp.filter({ case(currentIp, _) => currentIp == ip })
+      val existingRequestDateTimes = requestDateTimesByIp.filter({ case (currentIp, _) => currentIp == ip })
 
       existingRequestDateTimes.isEmpty match {
         case true => requestDateTimesByIp :+ (ip, Set(currentRequestDateTime))
